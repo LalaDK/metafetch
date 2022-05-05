@@ -1,6 +1,6 @@
 # metafetch
 
-Fetches SAML2 metadata URL, parses the XML and outputs SHA1 fingerprint, notBefore and notAfter attributes.
+Fetches SAML2 metadata, parses the XML and outputs SHA1 fingerprint, notBefore and notAfter attributes.
 
 ![Screenshot](https://github.com/LalaDK/metafetch/blob/c1ab893149f5d54d8e3f661a3a78a2990279b473/screenshot.png)
 
