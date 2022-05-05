@@ -5,7 +5,12 @@ require 'open3'
 require 'date'
 require 'colorize'
 
-URL = "https://adfs.billund.dk/FederationMetadata/2007-06/FederationMetadata.xml"
+if ARGV.length == 0
+  STDERR.puts "usage: metafetch [URL]"
+  exit(1)
+else
+  URL = ARGV[0]
+end
 
 def format_to_pem(cert)
   cert.gsub!("\n", '')
